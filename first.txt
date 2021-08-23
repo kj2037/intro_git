@@ -4,24 +4,42 @@
 
 
 ls
+    ディレクトリ内のファイルを表示
 ls -a
+    ディレクトリ内のファイルを隠しファイルも含めて表示
 
 git init
     ローカルリポジトリ作成
+
+git diff
+    ステージングエリアとのファイルの変更差分を表示
+git diff HEAD
+    ステージングエリアとのコミットの差分
+
 git add xxxxxxx.yyy
     指定したファイルの変更をステージングエリアへ登録する
 git add .
     全ての変更をステージングエリアへ登録する
+
 git rm xxxxxxx.yyy
     ステージングエリアからファイルを削除
+
 git commit -m "コメントを書く"
     ローカルリポジトリへコミット
 git commit -v
     変更内容を確認してコミット
+
 git status
     リポジトリ内の状態確認
+
 git log
     コミットログの表示
+git log --oneline
+    コミットログの一行で表示
+git log -p xxxxxxx.yyy 
+    ファイルの差分を表示する(qで操作終了)
+git log -n 3 
+    最新3つのコミットログ表示
 
 rm
     ファイルの削除
