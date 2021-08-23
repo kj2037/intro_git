@@ -23,6 +23,8 @@ git add .
 
 git rm xxxxxxx.yyy
     ステージングエリアからファイルを削除
+git rm -r ディレクトリ名
+    ディレクトリを削除
 
 git commit -m "コメントを書く"
     ローカルリポジトリへコミット
@@ -40,6 +42,11 @@ git log -p xxxxxxx.yyy
     ファイルの差分を表示する(qで操作終了)
 git log -n 3 
     最新3つのコミットログ表示
+
+git push origin
+    新しくoriginという名前でローカルリポジトリの内容をリモートリポジトリ(共有リポジトリ)にpush
+git remote add
+    リモートリポジトリ(共有リポジトリ)にpush
 
 rm
     ファイルの削除
